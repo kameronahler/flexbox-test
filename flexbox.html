@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox try</title>
+		<meta name="" content="">
+		<meta name="" content="">
+		<meta name="Kameron Ahler">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+		<script>  $(function() {
+		      $('a[href*=#]:not([href=#])').click(function() {
+		          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		              var target = $(this.hash);
+		              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		              if (target.length) {
+		                  $('html,body').animate({
+		                      scrollTop: target.offset().top
+		                  }, 1000);
+		                  return false;
+		              }
+		          }
+		      });
+		  });
+		</script>
+	</head>
+
+<header>
+	<section id="home">
+	</section>
+		<div class="nav-container">
+			<ul class="navbar">
+				<a href="#home"><li>Home</li></a>
+				<a href="#icons"><li>Icons</li></a>
+				<li>About</li>
+				<li>Blog</li>			
+				<a href="#contact"><li>Contact</li></a>
+			</ul>
+		</div>
+<header>
+
+<body>
+	<div class="row">
+		<div class="jumbotron">
+			<p>All Work + No Play...</p>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<div class="row">
+	<section id="icons">
+		<div class="flex-container">
+			<div class="flex-icon">
+				<img class="icon" src="images/01.svg" onerror="this.onerror=null; this.src=''">
+					<div class="flex-icon-title-container">
+						<p> This is a long Icon 1 title</p>
+					</div>
+			</div>
+			<div class="flex-icon">
+				<img class="icon" src="images/02.svg" onerror="this.onerror=null; this.src=''">
+					<div class="flex-icon-title-container">
+						<p>Icon 2</p>
+					</div>
+			</div>
+			<div class="flex-icon">
+				<img class="icon" src="images/03.svg" onerror="this.onerror=null; this.src=''">
+					<div class="flex-icon-title-container">
+						<p>Item 3</p>
+					</div>
+			</div>	
+			
+			<div class="flex-icon">
+				<img class="icon" src="images/04.svg" onerror="this.onerror=null; this.src=''">
+					<div class="flex-icon-title-container">
+						<p>Icon 4</p>
+					</div>
+			</div>					
+		</div>
+	</section>
+	</div>
+</body>
+
+<footer>
+<section id="contact">
+</section>
+	<div class="row">
+		<p>Thanks for coming by!</p>
+	</div>
+</footer>
+</html>
